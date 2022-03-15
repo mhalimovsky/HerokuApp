@@ -11,6 +11,5 @@ public class TyposTest extends BaseTest {
         driver.navigate().refresh();
         String text2 = driver.findElement(By.tagName("p")).getText();
         assertEquals(text1, "Sometimes you'll see a typo, other times you won't.");
-
     }
 }

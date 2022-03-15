@@ -15,5 +15,4 @@ public class CheckBoxTest extends BaseTest {
         isSelected = driver.findElement(By.cssSelector("[type=checkbox]")).isSelected();
         assertFalse(isSelected);
     }
-
 }

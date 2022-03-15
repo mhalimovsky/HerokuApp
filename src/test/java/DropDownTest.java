@@ -22,7 +22,5 @@ public class DropDownTest extends BaseTest {
         assertTrue(select.getOptions().get(1).isSelected());
         select.selectByVisibleText("Option 2");
         assertTrue(select.getOptions().get(2).isSelected());
-
-
     }
 }

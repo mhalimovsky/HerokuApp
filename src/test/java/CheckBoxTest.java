@@ -12,8 +12,8 @@ public class CheckBoxTest extends BaseTest {
         boolean isSelected = driver.findElement(By.cssSelector("[type=checkbox]")).isSelected();
         assertTrue(isSelected);
         driver.findElement(By.cssSelector("[type=checkbox]")).click();
-        boolean isUnSelected = driver.findElement(By.cssSelector("[type=checkbox]")).isSelected();
-        assertFalse(isUnSelected);
+        isSelected = driver.findElement(By.cssSelector("[type=checkbox]")).isSelected();
+        assertFalse(isSelected);
     }
 
 }

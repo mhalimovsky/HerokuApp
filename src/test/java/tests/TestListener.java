@@ -58,17 +58,17 @@ public class TestListener implements ITestListener {
     }
 
     @Attachment(value = "Last screen state", type = "image/png")
-    private byte[] takeScreenshot(ITestResult iTestResult){
+    private byte[] takeScreenshot(ITestResult iTestResult) {
         ITestContext context = iTestResult.getTestContext();
-        try{
+        try {
             WebDriver driver = (WebDriver) context.getAttribute("driver");
             if (driver != null) {
                 return AllureUtils.takeScreenshot(driver);
             } else {
-                return new byte[] {};
+                return new byte[]{};
             }
-        } catch (NoSuchSessionException | IllegalStateException ex){
-            return new  byte[] {};
+        } catch (NoSuchSessionException | IllegalStateException ex) {
+            return new byte[]{};
         }
     }
 }

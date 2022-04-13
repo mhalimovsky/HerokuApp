@@ -23,8 +23,8 @@ public class BaseTest {
     FramesPage framesPage;
     FileUploaderPage fileUploaderPage;
 
-    @BeforeMethod (description = "Opening Browser")
-    public void setup (ITestContext testContext) {
+    @BeforeMethod(description = "Opening Browser")
+    public void setup(ITestContext testContext) {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         testContext.setAttribute("driver", driver);
